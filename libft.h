@@ -61,6 +61,6 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_strdup(const char *src);
 char	*ft_strndup(const char *src, unsigned int size);
 int		get_next_line(int fd, char **line);
-int		ft_printf(const char *str, ...);
+int		ft_printf(const char *str, ...) __attribute__((format(printf, 1, 2)));
 
 #endif
